@@ -41,11 +41,11 @@ void sequence() {
 
   tempo = analogRead(A14);
 
-  if (digitalRead(switchPin) == LOW) {
+  if (digitalRead(switchPin) == HIGH) {
     forwardStep(tempo);
   }
 
-  if (digitalRead(switchPin) == HIGH) {
+  if (digitalRead(switchPin) == LOW) {
     backwardStep(tempo);
   }
 }
